@@ -1,16 +1,11 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Sobre o Projeto
 
-Currently, two official plugins are available:
+Este projeto é um exercício prático focado no gerenciamento de dados em React utilizando Vite. O objetivo principal é demonstrar o fluxo de informações através de props, manipulação de eventos e o uso do hook useState.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Funcionalidades
 
-## React Compiler
+Cadastro Simulado: Ao inserir dados nos campos de entrada (inputs), os valores são capturados e armazenados via useState. Ao clicar no botão "Registrar", esses dados são listados em uma tabela, simulando o comportamento de um cadastro em banco de dados.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Verificação de Registros: O sistema permite validar se um nome inserido nos inputs já existe na lista de registros. Ao clicar no botão "Entrar", a aplicação percorre os dados armazenados para verificar a correspondência, retornando se o usuário está correto ou não.
